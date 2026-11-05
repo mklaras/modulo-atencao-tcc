@@ -1,33 +1,28 @@
-# Modulo de monitoramento visual
+# Módulo de Monitoramento Visual
 
-Este repositorio executa, como ponto de entrada principal, somente o monitor de
-atencao/dispersao por webcam. Ele nao controla a aplicacao do estudo: observa o
-participante em paralelo e registra intervalos temporais para sincronizacao posterior.
+Este repositório executa, como ponto de entrada principal, exclusivamente o monitoramento de atenção e dispersão por meio de webcam. Ele não controla a aplicação do estudo: sua função é observar o participante em paralelo e registrar intervalos temporais para posterior sincronização.
 
-## Execucao
+## Execução
 
 ```powershell
 .venv\Scripts\python.exe main.py --participant-id P001
 ```
 
-A execucao comeca com a calibracao de cinco pontos (3 segundos por ponto). Os
-primeiros 0,5 segundos de cada fixacao sao descartados. Depois, uma janela de
-diagnostico mostra `EM_FOCO`, `DISTRACTION_GAZE`, `DISTRACTION_COGNITIVE` ou
-`SLEEPY`. Pressione `Q` ou `Esc` para encerrar e fechar um evento ainda aberto.
+A execução começa com a calibração de cinco pontos, com duração de 3 segundos por ponto. Os primeiros 0,5 segundos de cada fixação são descartados. Em seguida, uma janela de diagnóstico apresenta um dos seguintes estados: `EM_FOCO`, `DISTRACTION_GAZE`, `DISTRACTION_COGNITIVE` ou `SLEEPY`.
 
-Os arquivos sao gravados continuamente em `monitoring_logs/`, nos formatos CSV e
-JSON. Use um identificador pseudonimizado para o participante.
+Para encerrar a execução, pressione `Q` ou `Esc`. Caso exista algum evento em aberto, ele será finalizado automaticamente.
 
-Opcoes importantes:
+Os arquivos são gravados continuamente no diretório `monitoring_logs/`, nos formatos CSV e JSON. Recomenda-se utilizar um identificador pseudonimizado para cada participante.
 
-- `--camera 1`: seleciona outra webcam;
-- `--aoi 0.1,0.1,0.9,0.9`: limita a area de interesse (coordenadas normalizadas);
-- `--no-preview`: monitora sem manter a janela da webcam depois da calibracao;
-- `--cognitive-threshold 0.0004`: ajusta o limiar empirico de variancia;
-- `--output caminho`: altera a pasta dos logs.
+### Opções importantes
 
-O sistema solicita 1280x720 a 30 FPS e mostra a latencia por quadro no preview. A
-taxa efetiva depende da webcam e do computador. A distancia recomendada e 60--75 cm.
+- `--camera 1`: seleciona outra webcam.
+- `--aoi 0.1,0.1,0.9,0.9`: delimita a área de interesse (coordenadas normalizadas).
+- `--no-preview`: realiza o monitoramento sem manter a janela de visualização da webcam após a calibração.
+- `--cognitive-threshold 0.0004`: ajusta o limiar empírico de variância.
+- `--output caminho`: altera o diretório de armazenamento dos registros.
+
+O sistema solicita uma resolução de 1280 × 720 pixels e uma taxa de 30 FPS, além de exibir a latência por quadro na janela de visualização. A taxa efetiva depende das características da webcam e do computador utilizado. A distância recomendada entre o participante e a câmera é de 60 a 75 cm.
 
 ## Testes
 
@@ -35,5 +30,4 @@ taxa efetiva depende da webcam e do computador. A distancia recomendada e 60--75
 .venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-O limiar de distracao cognitiva e empirico e deve ser validado no protocolo do
-estudo. Os eventos gerados nao constituem avaliacao clinica do participante.
+O limiar de detecção de distração cognitiva é empírico e deve ser validado de acordo com o protocolo do estudo. Os eventos registrados pelo sistema não constituem uma avaliação clínica do participante.
