@@ -1,0 +1,29 @@
+[
+  {
+    "participant_id": "P001",
+    "timestamp_inicio": "2026-11-03T22:10:55.033Z",
+    "timestamp_fim": "2026-11-03T22:10:58.251Z",
+    "duracao_segundos": 3.218,
+    "tipo_evento": "DISTRACTION_GAZE",
+    "porcentagem_perda_quadros_no_intervalo": 0.0,
+    "classificacao_duracao": "CURTO"
+  },
+  {
+    "participant_id": "P001",
+    "timestamp_inicio": "2026-11-03T22:11:07.064Z",
+    "timestamp_fim": "2026-11-03T22:11:09.673Z",
+    "duracao_segundos": 2.609,
+    "tipo_evento": "SLEEPY",
+    "porcentagem_perda_quadros_no_intervalo": 0.0,
+    "classificacao_duracao": "CURTO"
+  },
+  {
+    "participant_id": "P001",
+    "timestamp_inicio": "2026-11-03T22:11:12.220Z",
+    "timestamp_fim": "2026-11-03T22:11:18.361Z",
+    "duracao_segundos": 6.141,
+    "tipo_evento": "DISTRACTION_GAZE",
+    "porcentagem_perda_quadros_no_intervalo": 0.0,
+    "classificacao_duracao": "CURTO"
+  }
+]

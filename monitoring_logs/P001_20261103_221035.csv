@@ -1,0 +1,4 @@
+﻿participant_id,timestamp_inicio,timestamp_fim,duracao_segundos,tipo_evento,porcentagem_perda_quadros_no_intervalo,classificacao_duracao
+P001,2026-11-03T22:10:55.033Z,2026-11-03T22:10:58.251Z,3.218,DISTRACTION_GAZE,0.0,CURTO
+P001,2026-11-03T22:11:07.064Z,2026-11-03T22:11:09.673Z,2.609,SLEEPY,0.0,CURTO
+P001,2026-11-03T22:11:12.220Z,2026-11-03T22:11:18.361Z,6.141,DISTRACTION_GAZE,0.0,CURTO

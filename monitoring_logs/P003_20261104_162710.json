@@ -1,0 +1,11 @@
+[
+  {
+    "participant_id": "P003",
+    "timestamp_inicio": "2026-11-04T16:27:33.517Z",
+    "timestamp_fim": "2026-11-04T16:27:36.642Z",
+    "duracao_segundos": 3.125,
+    "tipo_evento": "DISTRACTION_GAZE",
+    "porcentagem_perda_quadros_no_intervalo": 0.0,
+    "classificacao_duracao": "CURTO"
+  }
+]

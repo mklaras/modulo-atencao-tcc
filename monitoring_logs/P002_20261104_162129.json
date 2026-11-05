@@ -1,0 +1,47 @@
+[
+  {
+    "participant_id": "P002",
+    "timestamp_inicio": "2026-11-04T16:21:58.249Z",
+    "timestamp_fim": "2026-11-04T16:22:02.093Z",
+    "duracao_segundos": 3.844,
+    "tipo_evento": "DISTRACTION_GAZE",
+    "porcentagem_perda_quadros_no_intervalo": 0.0,
+    "classificacao_duracao": "CURTO"
+  },
+  {
+    "participant_id": "P002",
+    "timestamp_inicio": "2026-11-04T16:22:02.093Z",
+    "timestamp_fim": "2026-11-04T16:22:02.531Z",
+    "duracao_segundos": 0.438,
+    "tipo_evento": "SLEEPY",
+    "porcentagem_perda_quadros_no_intervalo": 0.0,
+    "classificacao_duracao": "CURTO"
+  },
+  {
+    "participant_id": "P002",
+    "timestamp_inicio": "2026-11-04T16:22:02.531Z",
+    "timestamp_fim": "2026-11-04T16:22:04.624Z",
+    "duracao_segundos": 2.093,
+    "tipo_evento": "DISTRACTION_GAZE",
+    "porcentagem_perda_quadros_no_intervalo": 0.0,
+    "classificacao_duracao": "CURTO"
+  },
+  {
+    "participant_id": "P002",
+    "timestamp_inicio": "2026-11-04T16:22:04.656Z",
+    "timestamp_fim": "2026-11-04T16:22:08.093Z",
+    "duracao_segundos": 3.437,
+    "tipo_evento": "DISTRACTION_GAZE",
+    "porcentagem_perda_quadros_no_intervalo": 0.0,
+    "classificacao_duracao": "CURTO"
+  },
+  {
+    "participant_id": "P002",
+    "timestamp_inicio": "2026-11-04T16:22:11.015Z",
+    "timestamp_fim": "2026-11-04T16:22:24.078Z",
+    "duracao_segundos": 13.063,
+    "tipo_evento": "DISTRACTION_GAZE",
+    "porcentagem_perda_quadros_no_intervalo": 0.0,
+    "classificacao_duracao": "CURTO"
+  }
+]
